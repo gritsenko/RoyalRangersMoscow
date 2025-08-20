@@ -5,7 +5,9 @@ body{font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif;line-height:1.5;color
 .container{max-width:900px;margin:0 auto;padding:1rem}
 .site-header{background:#fff;border-bottom:1px solid #e6e9ef}
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:.75rem 0}
-.logo{font-weight:700;color:var(--accent);text-decoration:none;font-size:1.125rem}
+.logo{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;color:var(--accent);text-decoration:none;font-size:1.125rem}
+.logo-img{width:44px;height:44px;object-fit:contain;border-radius:6px}
+.logo-text{font-size:1rem}
 .site-nav{display:flex;gap:.5rem}
 .site-nav a{color:#0f1724;text-decoration:none;padding:.5rem;border-radius:6px}
 .site-nav a:hover{background:#f1f5f9}
