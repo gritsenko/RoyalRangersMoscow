@@ -1,0 +1,35 @@
+/* Basic reset */
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--accent:#2b6cb0;--muted:#6b7280;--bg:#f7fafc;--card:#ffffff}
+body{font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif;line-height:1.5;color:#0f1724;background:linear-gradient(180deg,var(--bg),#fff)}
+.container{max-width:900px;margin:0 auto;padding:1rem}
+.site-header{background:#fff;border-bottom:1px solid #e6e9ef}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:.75rem 0}
+.logo{font-weight:700;color:var(--accent);text-decoration:none;font-size:1.125rem}
+.site-nav{display:flex;gap:.5rem}
+.site-nav a{color:#0f1724;text-decoration:none;padding:.5rem;border-radius:6px}
+.site-nav a:hover{background:#f1f5f9}
+.nav-toggle{display:none;background:transparent;border:0;font-size:1.25rem}
+.hero{padding:3rem 0;background:linear-gradient(90deg,rgba(43,108,176,0.06),rgba(43,108,176,0.02))}
+.hero h1{font-size:2rem;margin-bottom:.25rem}
+.tagline{color:var(--muted);margin-bottom:1rem}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:.6rem .9rem;border-radius:8px;text-decoration:none;border:0;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.about h2,.services h2,.gallery h2,.contact h2{margin:1rem 0}
+.services-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;list-style:none}
+.card{background:var(--card);padding:1rem;border:1px solid #eef2f6;border-radius:8px;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1rem}
+.gallery-img{display:block;max-width:100%;height:auto;border-radius:6px}
+.contact-form{display:grid;gap:.5rem;max-width:560px}
+.contact-form label{display:flex;flex-direction:column;gap:.25rem}
+.contact-form input,.contact-form textarea{padding:.5rem;border:1px solid #dbe3ee;border-radius:6px}
+.form-actions{display:flex;gap:.5rem;margin-top:.5rem}
+.form-message{color:var(--muted);margin-top:.5rem}
+.site-footer{border-top:1px solid #e6e9ef;margin-top:2rem;background:#fff}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;padding:1rem}
+.social a{margin-left:.5rem;color:var(--muted);text-decoration:none}
+@media (max-width:700px){
+  .site-nav{display:none;flex-direction:column;background:#fff;position:absolute;right:1rem;top:64px;padding:.5rem;border-radius:8px;box-shadow:0 6px 18px rgba(12,15,20,.08)}
+  .nav-toggle{display:block}
+  .header-inner{position:relative}
+}

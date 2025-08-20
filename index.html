@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Цпрские Охотники — Визитка</title>
+  <meta name="description" content="Официальная страница Цпрские Охотники — контакты, направления деятельности и как с нами связаться.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Цпрские Охотники</a>
+      <button class="nav-toggle" aria-label="Открыть меню">☰</button>
+      <nav class="site-nav" aria-label="Главное меню">
+        <a href="#about">О нас</a>
+        <a href="#services">Услуги</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Цпрские Охотники</h1>
+        <p class="tagline">Профессионалы в охоте и природоохранных работах</p>
+        <div class="hero-cta">
+          <a class="btn" href="#contact">Связаться</a>
+          <button id="downloadVcard" class="btn ghost">Скачать vCard</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>О нас</h2>
+      <p>«Цпрские Охотники» — объединение специалистов в области охоты, разведения и сохранения популяций диких животных. Мы работаем с частными клиентами и организациями, предоставляем консультации, обучение и полевую поддержку.</p>
+    </section>
+
+    <section id="services" class="container services">
+      <h2>Услуги</h2>
+      <ul class="services-list">
+        <li>
+          <h3>Экологические оценки</h3>
+          <p>Оценка мест обитания, советы по сохранению видов и мониторинг популяций.</p>
+        </li>
+        <li>
+          <h3>Полевые работы</h3>
+          <p>Проведение выездных работ, сопровождение и мониторинг.</p>
+        </li>
+        <li>
+          <h3>Обучение и консультации</h3>
+          <p>Курсы по безопасной и ответственной охоте, оборудование и разрешения.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="gallery" class="container gallery">
+      <h2>Галерея</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="images/дмитрий.jpg" alt="Дмитрий — Цпрские Охотники" class="gallery-img">
+        </div>
+        <div class="card">Фото 2</div>
+        <div class="card">Фото 3</div>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Контакты</h2>
+      <p>Телефон: <a href="tel:+70000000000">+7 (000) 000-00-00</a></p>
+      <p>Email: <a href="mailto:info@cprhunters.example">info@cprhunters.example</a></p>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <label>
+          Имя
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Сообщение
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn">Отправить</button>
+          <button type="button" id="clearForm" class="btn ghost">Очистить</button>
+        </div>
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Цпрские Охотники — Все права защищены</p>
+      <div class="social">
+        <a href="#" aria-label="Телеграм">Telegram</a>
+        <a href="#" aria-label="ВКонтакте">ВКонтакте</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
